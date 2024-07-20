@@ -1,0 +1,95 @@
+Description
+
+The tidy_data contains the tidy dataset that has been created by combining train and test data, activity labels and subjects data in one dataset. It is derived from the Human Activity Recognition Using Smartphones Dataset, where the data were collected from the accelerometer and gyroscope of a Samsung Galaxy S II smartphone worn by 30 subjects while performing six different activities.
+
+The summary data contains the average of each variable from tidy_data for each activity and each subject. 
+
+Variables
+Activity: The activity performed by the subject.
+
+Type: Factor
+Levels:
+WALKING
+WALKING_UPSTAIRS
+WALKING_DOWNSTAIRS
+SITTING
+STANDING
+LAYING
+Subject: The identifier of the subject who performed the activity.
+
+Type: Integer
+Range: 1 to 30
+
+Measurement Variables: Each of these variables represents the average of the corresponding feature for a given activity and subject. These are the mean and standard deviation measurements extracted from the original dataset. Below are some examples of these measurement variables with units included:
+
+Time Domain Signals:
+
+tBodyAcc-mean()-X: Mean value of body acceleration in the X direction (g).
+tBodyAcc-mean()-Y: Mean value of body acceleration in the Y direction (g).
+tBodyAcc-mean()-Z: Mean value of body acceleration in the Z direction (g).
+tBodyAcc-std()-X: Standard deviation of body acceleration in the X direction (g).
+tBodyAcc-std()-Y: Standard deviation of body acceleration in the Y direction (g).
+tBodyAcc-std()-Z: Standard deviation of body acceleration in the Z direction (g).
+tGravityAcc-mean()-X: Mean value of gravity acceleration in the X direction (g).
+tGravityAcc-mean()-Y: Mean value of gravity acceleration in the Y direction (g).
+tGravityAcc-mean()-Z: Mean value of gravity acceleration in the Z direction (g).
+tGravityAcc-std()-X: Standard deviation of gravity acceleration in the X direction (g).
+tGravityAcc-std()-Y: Standard deviation of gravity acceleration in the Y direction (g).
+tGravityAcc-std()-Z: Standard deviation of gravity acceleration in the Z direction (g).
+tBodyAccJerk-mean()-X: Mean value of body acceleration jerk in the X direction (g).
+tBodyAccJerk-mean()-Y: Mean value of body acceleration jerk in the Y direction (g).
+tBodyAccJerk-mean()-Z: Mean value of body acceleration jerk in the Z direction (g).
+tBodyAccJerk-std()-X: Standard deviation of body acceleration jerk in the X direction (g).
+tBodyAccJerk-std()-Y: Standard deviation of body acceleration jerk in the Y direction (g).
+tBodyAccJerk-std()-Z: Standard deviation of body acceleration jerk in the Z direction (g).
+tBodyGyro-mean()-X: Mean value of body gyroscope in the X direction (radians/second).
+tBodyGyro-mean()-Y: Mean value of body gyroscope in the Y direction (radians/second).
+tBodyGyro-mean()-Z: Mean value of body gyroscope in the Z direction (radians/second).
+tBodyGyro-std()-X: Standard deviation of body gyroscope in the X direction (radians/second).
+tBodyGyro-std()-Y: Standard deviation of body gyroscope in the Y direction (radians/second).
+tBodyGyro-std()-Z: Standard deviation of body gyroscope in the Z direction (radians/second).
+tBodyGyroJerk-mean()-X: Mean value of body gyroscope jerk in the X direction (radians/second).
+tBodyGyroJerk-mean()-Y: Mean value of body gyroscope jerk in the Y direction (radians/second).
+tBodyGyroJerk-mean()-Z: Mean value of body gyroscope jerk in the Z direction (radians/second).
+tBodyGyroJerk-std()-X: Standard deviation of body gyroscope jerk in the X direction (radians/second).
+tBodyGyroJerk-std()-Y: Standard deviation of body gyroscope jerk in the Y direction (radians/second).
+tBodyGyroJerk-std()-Z: Standard deviation of body gyroscope jerk in the Z direction (radians/second).
+tBodyAccMag-mean(): Mean value of the magnitude of body acceleration (g).
+tBodyAccMag-std(): Standard deviation of the magnitude of body acceleration (g).
+tGravityAccMag-mean(): Mean value of the magnitude of gravity acceleration (g).
+tGravityAccMag-std(): Standard deviation of the magnitude of gravity acceleration (g).
+tBodyAccJerkMag-mean(): Mean value of the magnitude of body acceleration jerk (g).
+tBodyAccJerkMag-std(): Standard deviation of the magnitude of body acceleration jerk (g).
+tBodyGyroMag-mean(): Mean value of the magnitude of body gyroscope (radians/second).
+tBodyGyroMag-std(): Standard deviation of the magnitude of body gyroscope (radians/second).
+tBodyGyroJerkMag-mean(): Mean value of the magnitude of body gyroscope jerk (radians/second).
+tBodyGyroJerkMag-std(): Standard deviation of the magnitude of body gyroscope jerk (radians/second).
+Frequency Domain Signals: Similar measurements taken after applying a Fast Fourier Transform (FFT) to some of the time-domain signals.
+
+fBodyAcc-mean()-X: Mean value of the body acceleration in the X direction (frequency domain, g).
+fBodyAcc-mean()-Y: Mean value of the body acceleration in the Y direction (frequency domain, g).
+fBodyAcc-mean()-Z: Mean value of the body acceleration in the Z direction (frequency domain, g).
+fBodyAcc-std()-X: Standard deviation of the body acceleration in the X direction (frequency domain, g).
+fBodyAcc-std()-Y: Standard deviation of the body acceleration in the Y direction (frequency domain, g).
+fBodyAcc-std()-Z: Standard deviation of the body acceleration in the Z direction (frequency domain, g).
+fBodyAccJerk-mean()-X: Mean value of body acceleration jerk in the X direction (frequency domain, g).
+fBodyAccJerk-mean()-Y: Mean value of body acceleration jerk in the Y direction (frequency domain, g).
+fBodyAccJerk-mean()-Z: Mean value of body acceleration jerk in the Z direction (frequency domain, g).
+fBodyAccJerk-std()-X: Standard deviation of body acceleration jerk in the X direction (frequency domain, g).
+fBodyAccJerk-std()-Y: Standard deviation of body acceleration jerk in the Y direction (frequency domain, g).
+fBodyAccJerk-std()-Z: Standard deviation of body acceleration jerk in the Z direction (frequency domain, g).
+fBodyGyro-mean()-X: Mean value of body gyroscope in the X direction (frequency domain, radians/second).
+fBodyGyro-mean()-Y: Mean value of body gyroscope in the Y direction (frequency domain, radians/second).
+fBodyGyro-mean()-Z: Mean value of body gyroscope in the Z direction (frequency domain, radians/second).
+fBodyGyro-std()-X: Standard deviation of body gyroscope in the X direction (frequency domain, radians/second).
+fBodyGyro-std()-Y: Standard deviation of body gyroscope in the Y direction (frequency domain, radians/second).
+fBodyGyro-std()-Z: Standard deviation of body gyroscope in the Z direction (frequency domain, radians/second).
+fBodyAccMag-mean(): Mean value of the magnitude of body acceleration (frequency domain, g).
+fBodyAccMag-std(): Standard deviation of the magnitude of body acceleration (frequency domain, g).
+fBodyBodyAccJerkMag-mean(): Mean value of the magnitude of body acceleration jerk (frequency domain, g).
+fBodyBodyAccJerkMag-std(): Standard deviation of the magnitude of body acceleration jerk (frequency domain, g).
+fBodyBodyGyroMag-mean(): Mean value of the magnitude of body gyroscope (frequency domain, radians/second).
+fBodyBodyGyroMag-std(): Standard deviation of the magnitude of body gyroscope (frequency domain, radians/second).
+Each variable in this dataset represents the average of the corresponding feature for each activity and each subject. These variables are normalized and bounded within [-1, 1].
+
+This codebook provides a comprehensive description of the variables in your summary_data.csv file, including the origin and type of each variable.
