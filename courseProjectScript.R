@@ -23,5 +23,5 @@ library(dplyr)
 summary_data <- tidy_data %>%
     group_by(Activity,Subject) %>%
     summarise(across(everything(),mean))
-write.csv(summary_data,"summary_data.csv")
-write.csv(tidy_data,"tidy_data.csv")
+write.table(summary_data,"summary_data.txt",row.names = FALSE)
+write.table(tidy_data,"tidy_data.txt",row.names = FALSE)
